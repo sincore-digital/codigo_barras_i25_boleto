@@ -23,5 +23,6 @@ Usando a função do [Aziz Vicentini](https://www.scriptbrasil.com.br/download/c
 Todo arquivo de layout do projeto BoletoPHP, possui uma chamada à função fbarcode(CODIGO). Essa função foi substituida pela imagem, algo assim
 
 ```php
-echo "<img src=\"http://localhost/unimedandradina.com.br/public_html/sistema/boleto/barcode/codigo/" . $dadosboleto["codigo_barras"] . "\">";
+	//fbarcode($dadosboleto["codigo_barras"]);
+	echo "<img src=\"boleto_barcode.php?codigo=" . $dadosboleto["codigo_barras"] . "\">";
 ```
