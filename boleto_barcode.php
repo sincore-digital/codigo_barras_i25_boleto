@@ -1,5 +1,4 @@
 <?php
-
 /**
  * base criada por Aziz Vicentini
  * azizvc@yahoo.com.br
@@ -14,7 +13,8 @@ function codificar($codigo)
 	$cbinicio = "NNNN";
 	$cbfinal = "WNN";
 	$cbnumeros = array("NNWWN", "WNNNW", "NWNNW", "WWNNN", "NNWNW", "WNWNN", "NWWNN", "NNNWW", "WNNWN", "NWNWN");
-
+	$cbresult = '';
+	
 	if (is_numeric($codigo)&(!(strlen($codigo)&1))) {
 
 		for($i = 0; $i < strlen($codigo); $i = $i+2) {
