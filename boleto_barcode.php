@@ -13,7 +13,7 @@ function codificar($codigo)
 {
 	$cbinicio = "NNNN";
 	$cbfinal = "WNN";
-	$cbnumeros = array("NNWWN", "WNNNW", "NWNNW", "WWNNN", "NNWNW", "WNWNN", "NWWNN", "NNNWW", "WNNWN", "NWNWN
+	$cbnumeros = array("NNWWN", "WNNNW", "NWNNW", "WWNNN", "NNWNW", "WNWNN", "NWWNN", "NNNWW", "WNNWN", "NWNWN");
 	$cbresult = '';
 
 	if (is_numeric($codigo)&(!(strlen($codigo)&1))) {
